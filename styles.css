@@ -173,10 +173,6 @@ img{
   color: var(--first-color);
 }
 
-.nav__link:focus{
-    color: var(--first-color);
-}
-
 .nav__toggle{
   font-size: 1.3rem;
   cursor: pointer;
@@ -188,9 +184,9 @@ img{
 }
 
 /* Active menu */
-.active-link{
+/* .active-link{
   color: var(--first-color);
-}
+} */
 
 /* Change background header */
 .scroll-header{
@@ -268,8 +264,10 @@ img{
   text-align: center;
 }
 
-.about__description{
-  margin-bottom: 200px;
+@media screen and (min-width: 768px){
+    .about__description{
+        margin-bottom: 200px;
+    }
 }
 
 .about__img{
@@ -328,6 +326,7 @@ img{
     color: black;
     font-size: 12px;
 }
+
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
