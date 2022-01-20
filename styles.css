@@ -4,12 +4,12 @@
 :root {
   --header-height: 3rem;
 
-  --first-color: #e48f34;
-  --first-color-alt: #048654;
+  --first-color: #bf630c;
+  --first-color-alt: #3eda17d0;
   --title-color: #393939;
-  --text-color: #5c5e03;
-  --text-color-light: #A6A6A6;
-  --body-color: white;
+  --text-color: #00000091;
+  --text-color-light: #000000;
+  --body-color: rgba(207, 148, 19, 0.329);
   --container-color: white;
 
   --body-font: 'Poppins', sans-serif;
@@ -170,6 +170,10 @@ img{
   color: var(--first-color);
 }
 
+.nav__link:focus{
+    color: var(--first-color);
+}
+
 .nav__toggle{
   font-size: 1.3rem;
   cursor: pointer;
@@ -221,7 +225,6 @@ img{
   bottom: 1.5rem;
 }
 
-/*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
@@ -244,7 +247,6 @@ img{
   justify-self: center;
 }
 
-/*========== BUTTONS ==========*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -258,7 +260,6 @@ img{
   background-color: var(--first-color-alt);
 }
 
-/*========== ABOUT ==========*/
 .about__data{
   text-align: center;
 }
@@ -294,16 +295,19 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.menu__name, .menu__preci{
+.menu__name{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
-
+.menu__price{
+    font-weight: var(--font-semi-bold);
+    color: #00000062;
+}
 .menu__name{
   font-size: var(--normal-font-size);
 }
 
-.menu__detail, .menu__preci{
+.menu__detail, .menu__price{
   font-size: var(--small-font-size);
 }
 
@@ -366,6 +370,10 @@ img{
   margin-top: 3.5rem;
 }
 
+.footer__content h4{
+    color: black;
+    font-size: 12px;
+}
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
@@ -417,17 +425,11 @@ img{
     display: none;
   }
 
-  .change-theme{
-    position: initial;
-    margin-left: var(--mb-2);
-  }
-
   .home__container{
     height: 100vh;
     justify-items: center;
   }
 
-  .services__container,
   .menu__container{
     margin-top: var(--mb-6);
   }
@@ -441,10 +443,6 @@ img{
   }
   .menu__img{
     width: 130px;
-  }
-
-  .app__store{
-    margin: 0 var(--mb-1) 0 0;
   }
 }
 
