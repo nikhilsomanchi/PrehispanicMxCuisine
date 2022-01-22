@@ -148,7 +148,6 @@ img{
     z-index: var(--z-fixed);
   }
 }
-
 .nav__item{
   margin-bottom: var(--mb-2);
 }
@@ -245,6 +244,7 @@ img{
   /* width: 300px; */
   /* justify-self: center; */
   padding-left: 100px;
+  padding-top: 60px;
 }
 
 .button{
@@ -265,9 +265,7 @@ img{
 }
 
 @media screen and (min-width: 768px){
-    .about__description{
-        margin-bottom: 200px;
-    }
+    
 }
 
 .about__img{
