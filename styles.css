@@ -2,7 +2,7 @@
 
 /* var */
 :root {
-  --header-height: 3rem;
+  --header-height: 10vh;
 
   --first-color: #bf630c;
   --first-color-alt: #3eda17d0;
@@ -159,7 +159,7 @@ img{
 
 .nav__logo{
     max-height: var(--header-height);
-    width: 50px;
+    width: 80px;
     top: 4%;
     left: 10%;
 }
@@ -324,7 +324,9 @@ img{
     color: black;
     font-size: 12px;
 }
-
+.iconn{
+  max-width: 80px;
+}
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
