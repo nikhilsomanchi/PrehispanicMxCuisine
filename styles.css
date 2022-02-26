@@ -265,7 +265,9 @@ img{
 }
 
 @media screen and (min-width: 768px){
-    
+    .menu__pdf{
+      padding-left: 15vh;
+    }
 }
 
 .about__img{
