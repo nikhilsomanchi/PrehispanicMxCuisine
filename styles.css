@@ -225,9 +225,9 @@ img{
 
 .home__container{
   height: calc(100vh - var(--header-height));
+  /* padding-bottom: 20vh; */
   align-content: center;
 }
-
 .home__title{
   font-size: var(--biggest-font-size);
   color: var(--first-color);
@@ -245,6 +245,9 @@ img{
   /* justify-self: center; */
   padding-left: 100px;
   padding-top: 60px;
+}
+.home__data{
+  padding-top: 80px;
 }
 
 .button{
