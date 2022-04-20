@@ -267,16 +267,18 @@ img{
   text-align: center;
 }
 
-@media screen and (min-width: 768px){
-    .menu__pdf{
-      padding-left: 15vh;
-    }
-}
+
 
 .about__img{
   width: 280px;
   border-radius: .5rem;
   justify-self: center;
+}
+
+@media screen and (max-width: 768px){
+  .menu__pdf{
+    padding-right: 15vh;
+  }
 }
 
 .footer__container{
@@ -402,6 +404,7 @@ img{
   }
   .menu__img{
     width: 130px;
+    /* padding-right: 15vh; */
   }
 }
 
